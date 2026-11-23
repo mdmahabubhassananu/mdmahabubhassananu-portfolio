@@ -19,6 +19,7 @@ import {
   type NavItemId,
 } from '../data/portfolioData';
 import { InteractivePortrait } from './InteractivePortrait';
+import stadiumBackdrop from '../assets/images/cricket_stadium_bg_1795470758476.jpg';
 
 interface HeroSectionProps {
   onNavigate: (id: NavItemId) => void;
@@ -52,7 +53,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
         className="pointer-events-none absolute inset-0 overflow-hidden"
       >
         <img
-          src="/src/assets/images/cricket_stadium_bg_1795470758476.jpg"
+          src={stadiumBackdrop}
           alt=""
           referrerPolicy="no-referrer"
           className="h-full w-full object-cover object-center opacity-50"
